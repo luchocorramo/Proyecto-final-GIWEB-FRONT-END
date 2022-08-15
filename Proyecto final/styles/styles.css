@@ -2,6 +2,7 @@ body, html{
     margin: 0;
     padding: 0;
     background-color: rgb(227, 212, 240);
+    font-family: 'Nunito', sans-serif;
 }
 
 :root{
@@ -33,17 +34,23 @@ label{
 .home{
     grid-area: home;
     display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-areas: "logutio palabrita";
+    grid-template-columns: 35% 65%;
+    grid-template-areas: "loguito palabrita";
+    transition: 0.5s;
 }
 
+
+.logo{
+    margin: auto;
+    width: 100%;
+    grid-area: loguito;
+}
 .logo img{
     margin: auto;
     width: 50px;
     height: 50px;
     border-radius: 100%;
     border: 3px solid white;
-    grid-area: loguito;
     align-items: center;
     text-align: center;
     transition: 0.5s;
@@ -53,6 +60,7 @@ label{
     text-align: justify;
     transition: 0.5s;
     grid-area: palabrita;
+    align-items: center;
 }
 
 .tittle{
@@ -79,7 +87,7 @@ label{
 
 .personalData a:hover{
     margin: auto;
-    color: rgb(205, 253, 243);
+    color:  rgb(135, 251, 226);
     font-family: 'Nunito', sans-serif;
     font-size: 160%;
     text-align: center;
@@ -87,26 +95,87 @@ label{
     transition: 0.5s;
 }
 
+.home:hover{
+    padding: 3%;
+    background-color: var(--tColor);
+    transition: 0.5s;
+} 
 
-.home:hover, .personalData:hover{
+.home label:hover{
+    
+    color:  rgb(135, 251, 226);
+} 
+.logo img:hover{
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 3px solid  rgb(135, 251, 226);
+    align-items: center;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.personalData:hover{
     padding: 6.5%;
     background-color: var(--tColor);
     transition: 0.5s;
 }
 
+.contCards{
+    width: 90%;
+    height: 80%;
+
+}
+
 .cards{
-    
+    width: 10rem;
+    height: 10rem;
+    border-radius: 25px;
+    background-color: white;
+    border: 3px solid var(--sColor);
 }
 
 .footer{
     width: 100%;
-    height: 7rem;
+    height: 10rem;
     background-color: var(--sColor);
     position:fixed;
     bottom:0;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas: "col1 col2";
+}
+
+.redes{
+    color: rgb(229, 194, 245);
+    text-align: justify;
+}
+
+.containerDataP{
+    margin: auto;
+    margin-top: 3rem;
+    width: 97%;
+    height: 88%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "foto nom nom"
+                         "foto cod carrera";
+}
+.fotoDataP{
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+.fotoDataP img{
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    border: 5px solid var(--sColor);
+    align-items: center;
+    text-align: center;
 }
 
 .colum1{
