@@ -1,0 +1,126 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(227, 212, 240);
+}
+
+:root{
+    --pColor: rgb(255, 255, 255);
+    --sColor: rgb(48, 38, 90);
+    --tColor: rgb(66, 52, 121);
+}
+
+label{
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 150%;
+}
+
+.navbar{
+    margin: auto;
+    top: 0;
+    width: 100%;
+    height: 5.5rem;
+    background-color: var(--sColor);
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas: "home titulo linkPData";
+    align-items: center;
+    text-align: center;
+    transition: 1s;
+}
+
+.home{
+    grid-area: home;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "logutio palabrita";
+}
+
+.logo img{
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 3px solid white;
+    grid-area: loguito;
+    align-items: center;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.palabraL{
+    text-align: justify;
+    transition: 0.5s;
+    grid-area: palabrita;
+}
+
+.tittle{
+    margin: auto;
+    color: white;
+    grid-area: titulo;
+    font-family: 'Nunito', sans-serif;
+    font-size: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.personalData a{
+    margin: auto;
+    color: white;
+    grid-area: linkPData;
+    font-family: 'Nunito', sans-serif;
+    font-size: 150%;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.personalData a:hover{
+    margin: auto;
+    color: rgb(205, 253, 243);
+    font-family: 'Nunito', sans-serif;
+    font-size: 160%;
+    text-align: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+
+.home:hover, .personalData:hover{
+    padding: 6.5%;
+    background-color: var(--tColor);
+    transition: 0.5s;
+}
+
+.cards{
+    
+}
+
+.footer{
+    width: 100%;
+    height: 7rem;
+    background-color: var(--sColor);
+    position:fixed;
+    bottom:0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "col1 col2";
+}
+
+.colum1{
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    width: 85%;
+    grid-area: col1;
+}
+
+.colum2{
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    width: 85%;
+    grid-area: col2;
+}
