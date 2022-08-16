@@ -123,17 +123,95 @@ label{
 }
 
 .contCards{
+    margin: auto;
     width: 90%;
-    height: 80%;
-
+    height: 93%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "col11 col12 col13 col14"
+                         "col21 col22 col23 col24";
 }
 
+.cl11{
+    height: 15rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    grid-area: col11;
+}
+.cl12{
+    height: 15rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    grid-area: col12;
+}
+.cl13{
+    height: 15rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    grid-area: col13;
+}
+.cl14{
+    height: 15rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    grid-area: col14;
+}
+.cl21{
+    height: 15rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    grid-area: col21;
+}
+.cl22{
+    height: 15rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    grid-area: col22;
+}
+.cl23{
+    height: 15rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    grid-area: col23;
+}
+.cl24{
+    height: 15rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    grid-area: col24;
+}
+
+
 .cards{
-    width: 10rem;
-    height: 10rem;
+    margin: auto;
+    width: 85%;
+    height: 90%;
     border-radius: 25px;
     background-color: white;
-    border: 3px solid var(--sColor);
+    border: 4px solid var(--sColor);
+    display: grid;
+    grid-template-rows: 88% 12%;
+    grid-template-areas: "imagen" "titt";
+}
+.imagen{
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    grid-area: imagen;
+}
+.tittleCard{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    grid-area: titt;
+    background-color: var(--sColor);
+    color: white;
+    text-align: center;
+    border-bottom-left-radius: 19px;
+    border-bottom-right-radius: 19px;
 }
 
 .footer{
@@ -153,15 +231,15 @@ label{
 }
 
 .containerDataP{
-    margin: auto;
-    margin-top: 3rem;
-    width: 97%;
+    width: 69%;
     height: 88%;
+    margin: auto;
+    margin-top: 7%;
     display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 30% 35% 35%;
+    grid-template-rows: 50% 50%;
     grid-template-areas: "foto nom nom"
-                         "foto cod carrera";
+                         "foto codigo carrera";
 }
 .fotoDataP{
     align-items: center;
@@ -170,12 +248,29 @@ label{
 }
 .fotoDataP img{
     margin: auto;
-    width: 400px;
-    height: 400px;
+    width: 330px;
+    height: 330px;
     border-radius: 100%;
     border: 5px solid var(--sColor);
     align-items: center;
     text-align: center;
+}
+.name{
+    text-align: center;
+    font-size: 50px;
+    grid-area: nom;
+    color: var(--sColor);
+    font-weight: 900;
+}
+.cod{
+    text-align: center;
+    grid-area: codigo;
+    font-size: 22px;
+}
+.car{
+    text-align: center;
+    grid-area: carrera;
+    font-size: 22px;
 }
 
 .colum1{
